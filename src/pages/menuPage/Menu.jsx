@@ -14,7 +14,7 @@ const Menu = () => {
     // Fetch data from the backend
     const fetchData = async () => {
       try {
-        const response = await fetch("https://vercel1-dun-nine.vercel.app/menu");
+        const response = await fetch("https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/menu");
         const data = await response.json();
         setMenu(data);
         setFilteredItems(data); // Initially, display all items
