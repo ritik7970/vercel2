@@ -27,7 +27,7 @@ const Cards = ({ item }) => {
         const cartItem = {menuItemId: _id, name, quantity : 1, image, price, email: user.email}
         const token = localStorage.getItem('access-token')
 
-        axios.post('https://vercel1-dun-nine.vercel.app/carts'
+        axios.post('https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/carts'
           ,cartItem,
              {
             headers: {

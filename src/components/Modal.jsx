@@ -33,7 +33,7 @@ const Modal = () => {
           email: data.email,
         };
         axios
-          .post("https://vercel1-dun-nine.vercel.app/users", userInfor)
+          .post("https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/users", userInfor)
           .then((response) => {
             // console.log(response);
             alert("Signin successful!");
@@ -60,7 +60,7 @@ const Modal = () => {
           email: result?.user?.email,
         };
         axios
-          .post("https://vercel1-dun-nine.vercel.app/users", userInfor)
+          .post("https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/users", userInfor)
           .then((response) => {
             // console.log(response);
             alert("Signin successful!");
