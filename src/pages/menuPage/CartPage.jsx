@@ -21,7 +21,7 @@ const CartPage = () => {
   const handleIncrease = async (item) => {
     const token = localStorage.getItem('access-token')
     try {
-      const response = await fetch(`https://vercel2-rho-two.vercel.app/carts/${item._id}`, {
+      const response = await fetch(`https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/carts/${item._id}`, {
         method: "PUT",
         headers: {
           authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ const CartPage = () => {
     if (item.quantity > 1) {
       try {
         const response = await fetch(
-          `http://localhost:6001/carts/${item._id}`,
+          `https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/carts/${item._id}`,
           {
             method: "PUT",
             headers: {
@@ -110,7 +110,7 @@ const CartPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`https://vercel1-dun-nine.vercel.app/carts/${item._id}`,
+        axios.delete(`https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/carts/${item._id}`,
              {
             headers: {
               authorization: `Bearer ${token}` // Add the token to the headers
