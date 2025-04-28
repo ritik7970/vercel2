@@ -11,7 +11,7 @@ const ManageBookings = () => {
   const fetchPayments = async () => {
     try {
       //const token = localStorage.getItem('token'); // Assume token is stored in localStorage
-      const response = await axios.get('https://vercel1-dun-nine.vercel.app/payments/all', {
+      const response = await axios.get('https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/payments/all', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPayments(response.data);
@@ -24,7 +24,7 @@ const ManageBookings = () => {
   const updateOrderStatus = async (id, Status) => {
     try {
       //const token = localStorage.getItem('token');
-      const response = await axios.put(`https://vercel1-dun-nine.vercel.app/payments/${id}`, { status }, {
+      const response = await axios.put(`https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/payments/${id}`, { status }, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const updatedPayment = response.data;

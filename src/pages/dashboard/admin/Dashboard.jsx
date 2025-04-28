@@ -11,7 +11,7 @@ const Dashboard = () => {
   const token = localStorage.getItem('access-token');
   const fetchPayments = async () => {
     try {
-      const response = await axios.get('https://vercel1-dun-nine.vercel.app/payments/all', {
+      const response = await axios.get('https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/payments/all', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setPayments(response.data);
@@ -22,7 +22,7 @@ const Dashboard = () => {
 
   const updateOrderStatus = async (id, status) => {
     try {
-      const response = await axios.put(`https://vercel1-dun-nine.vercel.app/payments/${id}`, { status }, {
+      const response = await axios.put(`https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/payments/${id}`, { status }, {
         headers: { Authorization: `Bearer ${token}` },
       });
       const updatedPayment = response.data;

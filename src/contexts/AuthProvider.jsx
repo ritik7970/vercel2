@@ -47,7 +47,7 @@ const AuthProvider = ({children}) => {
             setUser(currentUser);
             if(currentUser){
                 const userInfo ={email: currentUser.email}
-                axios.post('https://vercel1-dun-nine.vercel.app/jwt', userInfo)
+                axios.post('https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/jwt', userInfo)
                   .then( (response) => {
                     // console.log(response.data.token);
                     if(response.data.token){

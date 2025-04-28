@@ -13,7 +13,7 @@ const Order = () => {
     const { refetch, data: orders = [] } = useQuery({
         queryKey: ['orders', user?.email],
         queryFn: async () => {
-            const res = await fetch(`https://vercel1-dun-nine.vercel.app/payments?email=${user?.email}`, {
+            const res = await fetch(`https://vercel-3-g71l-rajs-projects-7c9d263b.vercel.app/payments?email=${user?.email}`, {
                 headers: {
                     authorization: `Bearer ${token}`
                 }
