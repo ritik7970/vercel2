@@ -21,7 +21,7 @@ const CartPage = () => {
   const handleIncrease = async (item) => {
     const token = localStorage.getItem('access-token')
     try {
-      const response = await fetch(`http://localhost:6001/carts/${item._id}`, {
+      const response = await fetch(`https://vercel2-rho-two.vercel.app/carts/${item._id}`, {
         method: "PUT",
         headers: {
           authorization: `Bearer ${token}`,
